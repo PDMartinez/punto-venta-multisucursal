@@ -1,0 +1,218 @@
+:root{
+--ColorMenu1: #464775;
+--ColorMenu2: #0E0D15;
+--ColorMenuDeco: #1E164E;
+}
+
+.boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba !important;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+
+.app-sidebar__user-avatar{
+width: 50px;
+height: 40px;
+background: #FFFFFF;
+padding: 3px;
+}
+
+.upimg, .notblock{
+  display: none !important;
+}
+
+.textcenter{
+  text-align: center;
+}
+.textright{
+  text-align: right;
+}
+.textleft{
+  text-align: left;
+}
+
+.texto-encima{
+
+  width:35px;
+  height:35px;
+  border-radius:100%;
+  background:#464775;
+  right:0;
+  bottom:0;
+  position:absolute;
+  margin-right:10px;
+  margin-bottom:10px;
+  border:none;
+  outline:none;
+  color:#FFF;
+  font-size:20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  transition:.3s;  
+}
+
+/*----- Componant: Top Navigation Bar ----- */
+.app-header {
+   background-color: var(--ColorMenu1);
+  
+}
+
+/*La parte del Logo de arriba donde dice compumark*/
+@media (min-width: 768px) {
+  .app-header__logo {
+    background-color: var(--ColorMenu2);
+  }
+}
+
+/*ES EL MENU AMBURGUESA*/
+.app-sidebar__toggle:focus, .app-sidebar__toggle:hover {
+
+  color: #fff;
+  background-color:var(--ColorMenu2);
+  text-decoration: none;
+}
+
+/*BARRA LATERAL GENERAL*/
+.app-sidebar {
+    background-color: var(--ColorMenu2);
+ }
+
+/*MENU CUANDO ESTA ACTIVO*/
+ .app-menu__item.active, .app-menu__item:hover, .app-menu__item:focus {
+  background: var(--ColorMenu1);
+  border-left-color: var(--ColorMenuDeco);
+  text-decoration: none;
+  color: #fff;
+}
+
+/*MENU DESPLEGABLE*/
+.treeview.is-expanded [data-toggle='treeview'] {
+  border-left-color: var(--ColorMenuDeco);
+  background:  var(--ColorMenu1);
+}
+
+/*ES PARA LOS ITEMS QUE SE DESPLIEGA*/
+.treeview-item.active, .treeview-item:hover, .treeview-item:focus {
+  background: var(--ColorMenu1);
+  text-decoration: none;
+  color: #fff;
+}
+
+.treeview-menu {
+   background: var(--ColorMenuDeco);
+}
+
+@media (min-width: 768px) {
+  
+  /*CUANDO COLAPSA EL MENU Y ES LA PRIMERA ITEMS QUE APARECE*/
+  .sidebar-mini.sidenav-toggled .app-menu__label {
+   
+    background: var(--ColorMenuDeco);
+    
+  }
+
+  /*CUANDO COLAPSA EL MENU Y COLOCAMOS EL CURSOR EN CIMA PARA QUE CAMBIE*/
+  .sidebar-mini.sidenav-toggled .treeview:hover .app-menu__item {
+    background:  var(--ColorMenuDeco);
+    border-left-color:var(--ColorMenu1);
+    color: #fff;
+  }
+  
+}
+
+.toggle-flip input[type="checkbox"] + .flip-indecator:before {
+  content: attr(data-toggle-off);
+  background-color: #009688;
+}
+
+.toggle-flip input[type="checkbox"] + .flip-indecator:after {
+  content: attr(data-toggle-on);
+  background-color: #ddd;
+  color: #fff;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+/*para alinear los botones y cuadro de busqueda*/
+.buttons, .buttons-vertical {
+    position: absolute !important;
+}
+
+/*Estilos login*/
+#divLoading{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(254,254,255, .65);
+  z-index: 9999;
+  display: none;
+}
+#divLoading img{
+  width: 50px;
+  height: 50px;
+}
+
+/* Editable */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #fff; }
+
+  .sk-three-bounce {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: white; }
+
+.sk-three-bounce .sk-child {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #593bdb;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+  animation: sk-three-bounce 1.4s ease-in-out 0s infinite both; }
+
+.sk-three-bounce .sk-bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s; }
+
+.sk-three-bounce .sk-bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s; }
+
+  @-webkit-keyframes sk-three-bounce {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@keyframes sk-three-bounce {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+    
